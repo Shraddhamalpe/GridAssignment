@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grid Layout Assignment</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(6, 120px);
-      gap: 2px;
-      border: 2px solid black;
-    }
-    .box {
-      border: 1px solid black;
-      padding: 10px;
-      overflow: hidden; /* changed from auto */
-  height: 100%;  
-    }
-    .box img, .box iframe {
-      max-width: 100%;
-      height: auto;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    .box1  { grid-column: 1 / span 3; grid-row: 1 / span 2; background: yellow; }
-    .box2  { grid-column: 4 / span 2; grid-row: 1; background: orange; }
-    .box3  { grid-column: 4 / span 2; grid-row: 2; background: yellow; }
-    .box4  { grid-column: 1; grid-row: 3; background: green; color: white; }
-    .box5  { grid-column: 2; grid-row: 3; background: blue; color: white; }
-    .box6  { grid-column: 3; grid-row: 3; background: yellow; }
-    .box7  { grid-column: 6; grid-row: 1 / span 2; background: red; color: white; }
-    .box8  { grid-column: 6; grid-row: 3; background: green; color: white; }
-   .box9  { grid-column: 4 / span 2; grid-row: 3; background: lightgray; }
-    .box10a { grid-column: 1 / span 3; grid-row: 4; background: yellow; }
-    .box10b { grid-column: 4 / span 2; grid-row: 4; background: orange; }
-    .box11 { grid-column: 1; grid-row: 5; background: lightblue; }
-    .box12 { grid-column: 2; grid-row: 5; background: lightblue; }
-    .box13 { grid-column: 3; grid-row: 5; background: orange; }
-    .box14 { grid-column: 4 / span 2; grid-row: 5 / span 2; background: red; color: white; }
-    .box15 { grid-column: 6; grid-row: 4; background: plum; }
-    .box16 { grid-column: 6; grid-row: 5; background: yellow; }
-    .box17 { grid-column: 6; grid-row: 6; background: gray; color: white; }
-    
-    
-  </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="box box1">1:<br><img src="https://picsum.photos/300/200" alt="Image 1"></div>
-    <div class="box box2">2: Marie Curie discovered radium and polonium.</div>
-    <div class="box box3">3: "The only way to do great work is to love what you do." – Steve Jobs</div>
-    <div class="box box4">4:
-      <ul>
-        <li>Reading</li>
-        <li>Listening</li>
-        <li>Gaming</li>
-        <li>Playing</li>
-        <li>Drawing</li>
-      </ul>
-    </div>
-    <div class="box box5">5:<br>
-      <iframe src="https://www.youtube.com/embed/KJwYBJMSbPI" title="Nature Video" allowfullscreen></iframe>
-    </div>
-    <div class="box box6">6: Jupiter is the largest planet in our solar system.</div>
-    <div class="box box7">7:<br>
-      <form>
-        Name: <input type="text"><br>
-        Email: <input type="email">
-      </form>
-    </div>
-    <div class="box box8">8:
-      <table border="1" width="100%">
-        <tr><th>Day</th><th>Task</th></tr>
-        <tr><td>Mon</td><td>Study</td></tr>
-        <tr><td>Tue</td><td>Practice</td></tr>
-      </table>
-    </div>
-    <div class="box box9">9: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit sed metus tincidunt aliquam. Curabitur eget eros nec velit fermentum commodo ut a urna.</div>
-    <div class="box box10a">10: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit sed metus tincidunt aliquam. Curabitur eget eros nec velit fermentum commodo ut a urna.</div>
-    <div class="box box10b">10: ...Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-    <div class="box box18">18: (Filler for white box after 10)</div>
-    <div class="box box11">11:<br>Google Maps Platform rejected your request.</div>
-    <div class="box box12">12:<br>I found a love, pure and true...</div>
-    <div class="box box13">13:<pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre></div>
-    <div class="box box14">14:<br>
-      <img src="https://picsum.photos/60/60?1" alt="img1">
-      <img src="https://picsum.photos/60/60?2" alt="img2">
-      <img src="https://picsum.photos/60/60?3" alt="img3">
-    </div>
-    <div class="box box15">15:<br>Name: Sneha<br>Age: 24<br>Country: India</div>
-    <div class="box box16">16:
-      <ul>
-        <li><a href="https://www.canva.com" target="_blank">Canva</a></li>
-        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+    <div class="container text text-center">
+
+        <div class="row border border-dark">
+            <div class="col border border-dark yellow " >1<img src="https://picsum.photos/300/200" alt="Image of Invention">
+      <p>Image of Invention</p></div>
+            <div class="col border border-dark">
+                <div class="row border border-dark orange">2<b>Inventor Bio:</b>
+      <p>Nikola Tesla was a brilliant inventor known for his contributions to the development of alternating current (AC) electricity, the Tesla coil, and numerous other innovations.</p></div>
+                <div class="row border border-dark yellow">3<q>The best way to predict the future is to invent it.</q></div>
+                <div class="row border border-dark">
+                    <div class="col border border-dark green">4<ul>
+        <li><b>Reading</b></li>
+        <li><b>Painting</b></li>
+        <li><b>Gaming</b></li>
+        <li><b>Coding</b></li>
+        <li><b>Exploring</b></li>
+      </ul></div>
+                    <div class="col border border-dark blue">5<iframe width="100%" height="250" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe></div>
+                    <div class="col border border-dark yellow">6<b>Fun Fact:</b> Venus spins backwards — the Sun rises in the west and sets in the east.</div>
+                </div>
+            </div>
+            <div class="col border border-dark">
+                <div class="row border border-dark h-50 red">7<form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email">
+      </form></div>
+                <div class="row border border-dark h-50 green">8  <table border="1" cellpadding="4" cellspacing="0">
+        <tr>
+          <th>Time</th>
+          <th>Activity</th>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td>Study</td>
+        </tr>
+        <tr>
+          <td>2:00 PM</td>
+          <td>Project</td>
+        </tr>
+      </table></div>
+            </div>
+        </div>
+
+        <div class="row border border-dark">
+            <div class="col-5 border border-dark">
+                <div class="row border border-dark h-50">
+                    <div class="col border border-dark yellow">9 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ... (add more if needed)</p></div>
+                    <div class="col border border-dark  orange">10<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec arcu nec magna efficitur viverra. ... (add more if needed)</p></div>
+                </div>
+                <div class="row border border-dark h-50">
+                    <div class="col border border-dark light-blue">11 <iframe 
+        src="https://maps.google.com/maps?q=Eiffel%20Tower&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+        width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                    <div class="col border border-dark skyblue">12<p>Roses are red,<br>Violets are blue,<br>Technology is power,<br>Especially for you.</p></div>
+                    <div class="col border border-dark orange">13 <pre><code>&lt;script&gt;
+alert('Hello, World!');
+&lt;/script&gt;</code></pre></div>
+                </div>
+            </div>
+            <div class="col-4 border border-dark red">14<img src="https://picsum.photos/60/60?3" alt="Gallery Image 1" width="250" height="250">
+      <img src="https://picsum.photos/60/60?2" alt="Gallery Image 2" width="250" height="250">
+      <img src="https://picsum.photos/60/60?1" alt="Gallery Image 3" width="250" height="250"></div>
+            <div class="col-3 border border-dark">
+                <div class="row border border-dark pink">15<div style="color:black;">
+        <b>Profile:</b><br>
+        Name: Isha<br>
+        Age: 21<br>
+        Country: India<br>
+        Profession: Student
+      </div></div>
+                <div class="row border border-dark yellow">16<ul>
+        <li><a href="https://www.google.com" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
         <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
-      </ul>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://chat.openai.com" target="_blank">ChatGPT</a></li>
+      </ul></div>
+                <div class="row border border-dark darkgrey">17<b>Journal Entry:</b>
+      <p>Today was an exciting day! I explored new web development techniques and integrated HTML features like forms, videos, and maps. Building interactive layouts is becoming more fun every day!</p></div>
+            </div>
+
+
+        </div>
     </div>
-    <div class="box box17">17:<br>Today I explored CSS Grid and practiced placing various elements responsively.</div>
-  </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
