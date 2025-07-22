@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grid Layout Assignment</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 120px);
+      gap: 2px;
+      border: 2px solid black;
+    }
+    .box {
+      border: 1px solid black;
+      padding: 10px;
+      overflow: hidden; /* changed from auto */
+  height: 100%;  
+    }
+    .box img, .box iframe {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .box1  { grid-column: 1 / span 3; grid-row: 1 / span 2; background: yellow; }
+    .box2  { grid-column: 4 / span 2; grid-row: 1; background: orange; }
+    .box3  { grid-column: 4 / span 2; grid-row: 2; background: yellow; }
+    .box4  { grid-column: 1; grid-row: 3; background: green; color: white; }
+    .box5  { grid-column: 2; grid-row: 3; background: blue; color: white; }
+    .box6  { grid-column: 3; grid-row: 3; background: yellow; }
+    .box7  { grid-column: 6; grid-row: 1 / span 2; background: red; color: white; }
+    .box8  { grid-column: 6; grid-row: 3; background: green; color: white; }
+   .box9  { grid-column: 4 / span 2; grid-row: 3; background: lightgray; }
+    .box10a { grid-column: 1 / span 3; grid-row: 4; background: yellow; }
+    .box10b { grid-column: 4 / span 2; grid-row: 4; background: orange; }
+    .box11 { grid-column: 1; grid-row: 5; background: lightblue; }
+    .box12 { grid-column: 2; grid-row: 5; background: lightblue; }
+    .box13 { grid-column: 3; grid-row: 5; background: orange; }
+    .box14 { grid-column: 4 / span 2; grid-row: 5 / span 2; background: red; color: white; }
+    .box15 { grid-column: 6; grid-row: 4; background: plum; }
+    .box16 { grid-column: 6; grid-row: 5; background: yellow; }
+    .box17 { grid-column: 6; grid-row: 6; background: gray; color: white; }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1">1:<br><img src="https://picsum.photos/300/200" alt="Image 1"></div>
+    <div class="box box2">2: Marie Curie discovered radium and polonium.</div>
+    <div class="box box3">3: "The only way to do great work is to love what you do." – Steve Jobs</div>
+    <div class="box box4">4:
+      <ul>
+        <li>Reading</li>
+        <li>Listening</li>
+        <li>Gaming</li>
+        <li>Playing</li>
+        <li>Drawing</li>
+      </ul>
+    </div>
+    <div class="box box5">5:<br>
+      <iframe src="https://www.youtube.com/embed/KJwYBJMSbPI" title="Nature Video" allowfullscreen></iframe>
+    </div>
+    <div class="box box6">6: Jupiter is the largest planet in our solar system.</div>
+    <div class="box box7">7:<br>
+      <form>
+        Name: <input type="text"><br>
+        Email: <input type="email">
+      </form>
+    </div>
+    <div class="box box8">8:
+      <table border="1" width="100%">
+        <tr><th>Day</th><th>Task</th></tr>
+        <tr><td>Mon</td><td>Study</td></tr>
+        <tr><td>Tue</td><td>Practice</td></tr>
+      </table>
+    </div>
+    <div class="box box9">9: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit sed metus tincidunt aliquam. Curabitur eget eros nec velit fermentum commodo ut a urna.</div>
+    <div class="box box10a">10: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel velit sed metus tincidunt aliquam. Curabitur eget eros nec velit fermentum commodo ut a urna.</div>
+    <div class="box box10b">10: ...Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+    <div class="box box18">18: (Filler for white box after 10)</div>
+    <div class="box box11">11:<br>Google Maps Platform rejected your request.</div>
+    <div class="box box12">12:<br>I found a love, pure and true...</div>
+    <div class="box box13">13:<pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre></div>
+    <div class="box box14">14:<br>
+      <img src="https://picsum.photos/60/60?1" alt="img1">
+      <img src="https://picsum.photos/60/60?2" alt="img2">
+      <img src="https://picsum.photos/60/60?3" alt="img3">
+    </div>
+    <div class="box box15">15:<br>Name: Sneha<br>Age: 24<br>Country: India</div>
+    <div class="box box16">16:
+      <ul>
+        <li><a href="https://www.canva.com" target="_blank">Canva</a></li>
+        <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+      </ul>
+    </div>
+    <div class="box box17">17:<br>Today I explored CSS Grid and practiced placing various elements responsively.</div>
+  </div>
+</body>
+</html>
